@@ -1,0 +1,44 @@
+
+.fullBody {
+
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+    
+}
+
+.cards {
+    grid-area: 1 / 2 / 5 / 2 ;
+    border-color: black !important;
+    background-color: black !important;
+}
+
+.card {
+    border-color: black !important;
+}
+
+.randomCard {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+.card-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-color: black;
+}
+
+
+.card-title{
+    color: white !important;
+}
+
+.card-text {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #787c7f !important;
+    border-color: #787c7f !important;
+}
