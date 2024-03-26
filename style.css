@@ -1,0 +1,74 @@
+    /* Navbar */
+    .navbar-brand{
+        justify-content: center;
+        position:relative;
+        left: 50%;
+        /* margin-left: -50px !important; */
+        text-align: center !important;
+        display: block;
+        
+    }
+    
+    .nav-link-active{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .navbar-toggler{
+        position: absolute !important;
+        right: 50px !important;
+    }
+    
+    button.Migos{
+        border:5px solid red !important;
+        width: px;
+       border-radius: 20px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       color: white;
+       background-color:black;
+    }
+    
+
+
+.fullBody {
+
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+    
+}
+
+.cards {
+    grid-area: 1 / 2 / 5 / 2 ;
+    border-color: black !important;
+    background-color: black !important;
+}
+
+.card {
+    border-color: black !important;
+}
+
+.randomCard {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+.card-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-color: black;
+}
+
+
+.card-title{
+    color: white !important;
+}
+
+.card-text {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #787c7f !important;
+    border-color: #787c7f !important;
+}
