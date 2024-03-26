@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Rankings</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./jessietest.js"></script>
     <script src="rankings.js"></script>
+    <link rel="icon" href="./images/randomRankingIcon.ico">
 </head>
-<body>
+<body onload="startPage()">
+    <div id="startPageDiv">
+        <img class="startPageLogo" src="./images/Random Ranking 2.1.png" alt="random-ranking-logo">
+        <p>Interesting Slogan Goes Here</p>
+        <p id="startDate"></p>
+        <button onclick="startGame()" id="startGameButton">Start Game</button>
+        <div class="test">
+            <div id="groupInfo"></div>
+        </div>
+        <div class="test2">
+            <div id="groupGitHubInfo"></div>
+        </div>
+        
+    </div>   
+    
+    
     
 </body>
 </html>
