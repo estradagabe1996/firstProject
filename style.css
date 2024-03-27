@@ -127,10 +127,11 @@
     
 }
 
-.test2 {
-    /* display: flex;
-    justify-content: center; */
-}
+/*.test2 {
+     display: flex;
+    justify-content: center; 
+}*/
+
 /*  pop up box */
 .popupbox{
     background-color:firebrick; 
