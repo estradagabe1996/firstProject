@@ -92,9 +92,7 @@ function fifth() {
 }
 
 
-
 // Start Page
-
 
 function startPage() {
     // This part of the function gets and prints out the current date
@@ -102,9 +100,8 @@ function startPage() {
     let currentDate = new Date();
     startDate.innerText = currentDate.toDateString();
 
-    let gameScreen = document.getElementById('gameScreen')
-    gameScreen.style.display = "none";
-
+    // used jQuery to hide the game screen
+    $("#gameScreen").hide();
 
     // // This part of the function prints the Creators' informations
     // let groupInfo = document.getElementById('groupInfo');
@@ -136,15 +133,19 @@ function startPage() {
 // let randomItem = [];
 
 function startGame() {
-    let startMenu = document.getElementById('startPageDiv');
-    startMenu.style.display = "none";
 
-    let gameScreen = document.getElementById('gameScreen')
-    gameScreen.style.display = "block";
+    // Codes using jQuery to hide the "start page" and to show the "game screen"
+    $("#startPageDiv").hide();
+
+    // let startMenu = document.getElementById('startPageDiv');
+    // startMenu.style.display = "none";
+
+    $("#gameScreen").show();
+
+    // let gameScreen = document.getElementById('gameScreen')
+    // gameScreen.style.display = "block";
 
 }
-
-// console.log("Random Item Test: " + randomItem[0].titleText.text, randomItem[0].primaryImage.url)
 
 
 // Gabe Code
