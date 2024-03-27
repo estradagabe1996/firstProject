@@ -24,17 +24,24 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?year=2023&titleType=movie&ge
     }
 });
 
+
+
+
 function starterItem() {
     
     let detailedContainer = document.getElementById("b0");
     let pledgeImage = document.createElement("img");
+    // let testHideDiv = document.createElement('div')
 
     pledgeImage.src = randomItem[0].url;
     pledgeImage.setAttribute('class', 'testImg');
 
-    detailedContainer.appendChild(pledgeImage);
+    detailedContainer.appendChild(testDiv);
+    testDiv.appendChild(pledgeImage);
+    // detailedContainer.appendChild(pledgeImage);
     
 }
+
 starterItem();
 
 
@@ -47,6 +54,8 @@ function first() {
 
     detailedContainer.appendChild(pledgeImage);
     randomItem.splice(0 , 1);
+
+   
     // document.getElementById("btn btn-primary").disabled = true;  
 }
 function second() {
@@ -58,7 +67,9 @@ function second() {
 
     detailedContainer.appendChild(pledgeImage);
     randomItem.splice(0 , 1);
+
     
+   
 }
 function third() {
     let detailedContainer = document.getElementById("b3");
@@ -69,6 +80,9 @@ function third() {
 
     detailedContainer.appendChild(pledgeImage);
     randomItem.splice(0 , 1);
+
+    
+   
 }
 function fourth() {
     let detailedContainer = document.getElementById("b4");
@@ -79,6 +93,9 @@ function fourth() {
 
     detailedContainer.appendChild(pledgeImage);
     randomItem.splice(0 , 1);
+
+    
+
 }
 function fifth() {
     let detailedContainer = document.getElementById("b5");
@@ -89,6 +106,9 @@ function fifth() {
 
     detailedContainer.appendChild(pledgeImage);
     randomItem.splice(0 , 1);
+
+    
+    
 }
 
 
@@ -96,6 +116,7 @@ function fifth() {
 
 function startPage() {
     // This part of the function gets and prints out the current date
+
     let startDate = document.getElementById('startDate');
     let currentDate = new Date();
     startDate.innerText = currentDate.toDateString();
@@ -103,47 +124,23 @@ function startPage() {
     // used jQuery to hide the game screen
     $("#gameScreen").hide();
 
-    // // This part of the function prints the Creators' informations
-    // let groupInfo = document.getElementById('groupInfo');
-    // let groupGitHubInfo = document.getElementById('groupGitHubInfo');
-    // let groupMembers = ["Gabriel", "Ashley", "Jessie"];
-    // let githubLinks = ["https://github.com/estradagabe1996", "https://github.com/moneymornings", "https://github.com/Hoang-J"]
-    // for(i = 0; i < groupMembers.length; i++) {
-    //     let eachMember = document.createElement('div');
-    //     eachMember.setAttribute('class', 'groupMembers');
-    //     eachMember.innerText = groupMembers[i];
-    //     let memberGithubLinks = document.createElement('div');
-    //     memberGithubLinks.setAttribute('class', 'groupMembers');
-    //     memberGithubLinks.innerText = githubLinks[i];
-    //     groupInfo.appendChild(eachMember);
-    //     groupGitHubInfo.appendChild(memberGithubLinks);
-    // }
-    // // let creator1 = document.createElement('p');
-    // // let creator2 = document.createElement('p');
-    // // let creator3 = document.createElement('p');
+    $("#howtoplaypopup").hide();
 
-    // // creator1.innerText = "Gabriel";
-    // // creator2.innerText = "Ashley";
-    // // creator3.innerText = "Jessie";
-
-    // // groupInfo.appendChild(creator1);
-
+    
 }
 
 // let randomItem = [];
 
 function startGame() {
 
-    // Codes using jQuery to hide the "start page" and to show the "game screen"
+    // Codes using jQuery to hide the "start page" and to show the "how to play instructions"
     $("#startPageDiv").hide();
 
     // let startMenu = document.getElementById('startPageDiv');
     // startMenu.style.display = "none";
 
-    $("#gameScreen").show();
-
-    // let gameScreen = document.getElementById('gameScreen')
-    // gameScreen.style.display = "block";
+    // used jQuery to show the how to play instructions
+    $("#howtoplaypopup").show();
 
 }
 
@@ -155,4 +152,7 @@ function startGame() {
 function closePop(){
     let button = document.getElementById ("howtoplaypopup")
     howtoplaypopup.style.display = "none";
+
+    // used jQuery to show the game screen
+    $("#gameScreen").show();
 }
