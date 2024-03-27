@@ -3,27 +3,28 @@
 // Has poster images, movie titles (would need to parse through)
 
 // Arrays
-let randomItem = [];
+let family = [];
+let shows = [];
 
 // API Calls
 fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType=movie&genre=Adventure', {
     headers: {
         'X-RapidAPI-Key': 'af40636de9msh6a580fcf8c8fa3ap158386jsnf7fe347d428c',
         'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com',
-    },
-})
+    }
 
+})
 .then((response) => response.json())
 .then((response) => {
     for(let j = 0; j < 5; j++) {
         let randomIndex = Math.ceil(Math.random() * 49);
                 console.log(randomIndex);
                 console.log("Movie Title: " + response.results[randomIndex].titleText.text);
-            randomItem.push(response.results[randomIndex].primaryImage);
-            // randomItem.push(response.results[randomIndex].primaryImage);
-                console.log("Random Item Test: " + randomItem[j].url);
+            family.push(response.results[randomIndex].primaryImage.url);
+            // family.push(response.results[randomIndex].primaryImage);
+                console.log("Random Item Test: " + family[j]);
     }
-});
+})
 
     //API 2/
 
@@ -32,10 +33,24 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType
         'X-RapidAPI-Key': '4833fa5f73mshf20639fcc428dc0p19bf44jsn63635ad62d44',
         'X-RapidAPI-Host': 'movies-api14.p.rapidapi.com'
     }
-
 })
+
 .then((response) => response.json())
-.then((data) => console.log(data))
+.then((data) => {
+    // console.log("test path: ", data.movies[0].title)
+    console.log("test path: ", data.movies[0].poster_path)
+    for(let k = 0; k < 5; k++) {
+        let randomIndex = Math.ceil(Math.random() * 41);
+                console.log(randomIndex);
+                console.log("Show Title: " + data.movies[randomIndex].title);
+            shows.push(data.movies[randomIndex].poster_path);
+            // family.push(response.results[randomIndex].primaryImage);
+                console.log("Random Item Test: " + shows[k]);
+    }
+})
+
+
+
 
 
 
@@ -50,7 +65,7 @@ function startGameButton(category, id) {
     let pledgeImage = document.createElement("img");
     // let testHideDiv = document.createElement('div')
 
-    pledgeImage.src = category[0].url;
+    pledgeImage.src = category[0];
     pledgeImage.setAttribute('class', 'starterImg');
 
 
@@ -64,7 +79,7 @@ function placeItem(category, id) {
     let detailedContainerDiv = document.getElementById(id);
     let pledgeImage = document.createElement("img");
 
-    pledgeImage.src = category[0].url;
+    pledgeImage.src = category[0];
     pledgeImage.setAttribute('class', 'testImg');
 
     detailedContainerDiv.appendChild(pledgeImage);
@@ -79,11 +94,11 @@ function placeItem(category, id) {
 //     let detailedContainer = document.getElementById("b2");
 //     let pledgeImage = document.createElement("img");
 
-//     pledgeImage.src = randomItem[0].url;
+//     pledgeImage.src = family[0].url;
 //     pledgeImage.setAttribute('class', 'testImg');
 
 //     detailedContainer.appendChild(pledgeImage);
-//     randomItem.splice(0 , 1);
+//     family.splice(0 , 1);
 //     starterItem();
     
 // }
@@ -91,22 +106,22 @@ function placeItem(category, id) {
 //     let detailedContainer = document.getElementById("b3");
 //     let pledgeImage = document.createElement("img");
 
-//     pledgeImage.src = randomItem[0].url;
+//     pledgeImage.src = family[0].url;
 //     pledgeImage.setAttribute('class', 'testImg');
 
 //     detailedContainer.appendChild(pledgeImage);
-//     randomItem.splice(0 , 1);
+//     family.splice(0 , 1);
 //     starterItem();
 // }
 // function fourth() {
 //     let detailedContainer = document.getElementById("b4");
 //     let pledgeImage = document.createElement("img");
 
-//     pledgeImage.src = randomItem[0].url;
+//     pledgeImage.src = family[0].url;
 //     pledgeImage.setAttribute('class', 'testImg');
 
 //     detailedContainer.appendChild(pledgeImage);
-//     randomItem.splice(0 , 1);
+//     family.splice(0 , 1);
 //     starterItem();
     
     
@@ -115,11 +130,11 @@ function placeItem(category, id) {
 //     let detailedContainer = document.getElementById("b5");
 //     let pledgeImage = document.createElement("img");
 
-//     pledgeImage.src = randomItem[0].url;
+//     pledgeImage.src = family[0].url;
 //     pledgeImage.setAttribute('class', 'testImg');
 
 //     detailedContainer.appendChild(pledgeImage);
-//     randomItem.splice(0 , 1);
+//     family.splice(0 , 1);
 //     starterItem();
 // }
 
@@ -145,7 +160,7 @@ function startPage() {
     
 }
 
-// let randomItem = [];
+// let family = [];
 
 function startGame() {
 
