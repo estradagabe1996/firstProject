@@ -117,3 +117,17 @@ button.Migos {
     background-color:black;
 }
 
+#easterButton {
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+    align-self: center;
+    border-radius: 20px;
+    border: 5px solid red;
+    border-radius: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color:black;
+    margin-top: 10px;
+}
+

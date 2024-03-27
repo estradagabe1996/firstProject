@@ -13,8 +13,9 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?year=2023&titleType=movie&ge
     console.log(response.results[0])
 });
 
-// Start Page
 
+
+// Start Page
 
 function startPage() {
     // This part of the function gets and prints out the current date
@@ -22,47 +23,40 @@ function startPage() {
     let currentDate = new Date();
     startDate.innerText = currentDate.toDateString();
 
-    let gameScreen = document.getElementById('gameScreen')
-    gameScreen.style.display = "none";
+    // used jQuery to hide the game screen
+    $("#gameScreen").hide();
 
-
-    // // This part of the function prints the Creators' informations
-    // let groupInfo = document.getElementById('groupInfo');
-    // let groupGitHubInfo = document.getElementById('groupGitHubInfo');
-    // let groupMembers = ["Gabriel", "Ashley", "Jessie"];
-    // let githubLinks = ["https://github.com/estradagabe1996", "https://github.com/moneymornings", "https://github.com/Hoang-J"]
-    // for(i = 0; i < groupMembers.length; i++) {
-    //     let eachMember = document.createElement('div');
-    //     eachMember.setAttribute('class', 'groupMembers');
-    //     eachMember.innerText = groupMembers[i];
-    //     let memberGithubLinks = document.createElement('div');
-    //     memberGithubLinks.setAttribute('class', 'groupMembers');
-    //     memberGithubLinks.innerText = githubLinks[i];
-    //     groupInfo.appendChild(eachMember);
-    //     groupGitHubInfo.appendChild(memberGithubLinks);
-    // }
-    // // let creator1 = document.createElement('p');
-    // // let creator2 = document.createElement('p');
-    // // let creator3 = document.createElement('p');
-
-    // // creator1.innerText = "Gabriel";
-    // // creator2.innerText = "Ashley";
-    // // creator3.innerText = "Jessie";
-
-    // // groupInfo.appendChild(creator1);
+    // let gameScreen = document.getElementById('gameScreen')
+    // gameScreen.style.display = "none";
+    
+    //used jQuery to animate the game logo as an easter egg (Happy Easter!)
+    $("#easterButton").click(function(){
+        $(".startPageLogo").animate({height: '800px', opacity: '0.4'}, "slow");
+        $(".startPageLogo").animate({width: '800px', opacity: '0.8'}, "slow");
+        $(".startPageLogo").animate({height: '400px', opacity: '0.4'}, "slow");
+        $(".startPageLogo").animate({width: '400px', opacity: '0.8'}, "slow");
+    });
 
 }
 
 function startGame() {
-    let startMenu = document.getElementById('startPageDiv');
-    startMenu.style.display = "none";
 
-    let gameScreen = document.getElementById('gameScreen')
-    gameScreen.style.display = "block";
+    // Codes using jQuery to hide the "start page" and to show the "game screen"
+    $("#startPageDiv").hide();
+
+    // let startMenu = document.getElementById('startPageDiv');
+    // startMenu.style.display = "none";
+
+    $("#gameScreen").show();
+
+    // let gameScreen = document.getElementById('gameScreen')
+    // gameScreen.style.display = "block";
 
 }
 
-
-
+// Easter egg on start page
+// $(document).ready((){
+    
+// });
 
 // Gabe Code
