@@ -1,33 +1,39 @@
-    /* Navbar */
-    .navbar-brand{
-        justify-content: center;
-        position:relative;
-        left: 50%;
-        /* margin-left: -50px !important; */
-        text-align: center !important;
-        display: block;
-        
-    }
-    
-    .nav-link-active{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .navbar-toggler{
-        position: absolute !important;
-        right: 50px !important;
-    }
-    
-    button.Migos{
-        border:5px solid red !important;
-        width: px;
-       border-radius: 20px;
-       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-       color: white;
-       background-color:black;
-    }
-    
+/* Navbar */
 
+.navbar-brand {
+    justify-content: center;
+    position:relative;
+    left: 50%;
+    /* margin-left: -50px !important; */
+    text-align: center !important;
+    display: block;
+    
+}
+
+.nav-link-active {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-toggler { 
+    position: absolute !important;
+    right: 50px !important;
+}
+
+button.Migos {
+    border: 5px solid red !important;
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color:black;
+    align-self: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* Game Cards, where the game is at */
 
 .fullBody {
 
@@ -92,18 +98,18 @@
 
 /* Start Page */
 
-
 #startPageDiv {
     display: flex;
     flex-direction: column;
     border: 2px dashed rgb(220, 47, 47);
     width: 100%;
     height: 800px;
+    margin-top: 100px;
+    background-color: black;
 }
 
 .startPageLogo { 
     align-self: center;
-    /* border: 2px solid green; */
     margin-top: 10px;
     width: 400px;
     height: 400px;
@@ -120,27 +126,15 @@
     height: 35px;
     font-size: 15px;
     align-self: center;
-    border-radius: 50px;
-    box-shadow: none;
-    border: 1px dashed rgb(220, 47, 47);
+    border-radius: 20px;
+    border: 5px solid red;
+    border-radius: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color:black;
 }
 
-.groupMembers {
-    /* position: relative;
-    top: 20px;
-    left: 641px; */
-    /* padding: 10px;
-    margin: 100px; */
-    /* width: 150px;
-    height: 50px; */
-    border: 2px solid green;
-    
+.testImg {
+    width: 150px;
+    height: 1fr;
 }
-
-.test {
-   display: flex;
-
-   align-self: center;
-    
-}
-
