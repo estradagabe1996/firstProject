@@ -152,6 +152,17 @@ button.Migos {
 
 
 /* pop up */
+#fullcontainer{
+   display: flex !important;
+   justify-content: center !important;
+   align-items: center !important;
+   
+    
+}
+
+body{
+    background-color: black !important;
+}
 
 .popupbox{
     background-color:firebrick; 
@@ -160,8 +171,8 @@ button.Migos {
     border-radius: 20px;
     color: black;
     width: 25%;
-    height: 500px;
     margin-top: 200px;
+    
 
 }
 
@@ -175,7 +186,7 @@ button.Migos {
 
 .closepop{
     position: absolute;
-    right: 75.5%;
+    right: 38%;
     height: 25px; 
 }
 
