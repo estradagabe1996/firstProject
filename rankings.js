@@ -55,9 +55,7 @@ function startGameButton(category, id) {
 
 
     currentImage.appendChild(pledgeImage);
-    detailedContainer.appendChild(currentImage);
-    
-    
+    detailedContainer.appendChild(currentImage);   
 }
 
 
@@ -129,7 +127,10 @@ function placeItem(category, id) {
 // Start Page
 
 // Function to 
+
 function startPage() {
+
+
     // This part of the function gets and prints out the current date
 
     let startDate = document.getElementById('startDate');
