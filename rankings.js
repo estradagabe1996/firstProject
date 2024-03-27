@@ -25,6 +25,21 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType
     }
 });
 
+    //API 2/
+
+    fetch('https://movies-api14.p.rapidapi.com/shows',{
+    headers: {
+        'X-RapidAPI-Key': '4833fa5f73mshf20639fcc428dc0p19bf44jsn63635ad62d44',
+        'X-RapidAPI-Host': 'movies-api14.p.rapidapi.com'
+    }
+
+})
+.then((response) => response.json())
+.then((data) => console.log(data))
+
+
+
+
 
 // Start Game Function
 function startGameButton(category, id) {
