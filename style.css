@@ -148,3 +148,31 @@ button.Migos {
     margin-top: 10px;
 }
 
+
+/* pop up */
+
+.popupbox{
+    background-color:firebrick; 
+    border: 5px solid goldenrod;
+    border-width: 8px;
+    border-radius: 20px;
+    color: black;
+    width: 25%;
+    height: 500px;
+
+}
+
+
+.popup-content{
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bolder;
+
+}
+
+
+.closepop{
+    position: absolute;
+    right: 75.5%;
+    height: 25px; 
+}
+
