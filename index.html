@@ -68,46 +68,41 @@
   <div class="fullBody">
     <div class="cards">
     <!-- Ranking buttons -->
-        <div class="card" style="height: 1fr;" id="card1">
+        <div class="card1" style="height: 1fr;" id="card1">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">1</a>
+            <div id="b1"></div>
+            <a href="#" onclick="first()" class="btn btn-primary">1</a>
             </div>
         </div>
-        <div class="card" style="height: 1fr;" id="card2">
+        <div class="card2" style="height: 1fr;" id="card2">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">2</a>
+              <div id="b2"></div>
+              <a href="#" onclick="second()" class="btn btn-primary">2</a>
             </div>
         </div>
-        <div class="card" style="height: 1fr;" id="card3">
+        <div class="card3" style="height: 1fr;" id="card3">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">3</a>
+              <div id="b3"></div>
+              <a href="#" onclick="third()" class="btn btn-primary">3</a>
             </div>
         </div>
-        <div class="card" style="height: 1fr;" id="card4">
+        <div class="card4" style="height: 1fr;" id="card4">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">4</a>
+              <div id="b4"></div>
+              <a href="#" onclick="fourth()" class="btn btn-primary">4</a>
             </div>
         </div>
-        <div class="card" style="height: 1fr;" id="card5">
+        <div class="card5" style="height: 1fr;" id="card5">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">5</a>
+              <div id="b5"></div>
+              <a href="#" onclick="fifth()" class="btn btn-primary">5</a>
             </div>
     </div>
-      
+  </div>     
     <!-- Random Item div -->
-    <div class="randomCard" id="randomCard">
+    <!-- <div class="randomCard" id="randomCard">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4" id="starterItem" onload="starterItem()">
             <img src="image.png" class="img-fluid rounded-start" alt="Random Movie">
           </div>
           <div class="col-md-8">
@@ -116,8 +111,12 @@
             </div>
           </div>
         </div>
-    </div>
-</div> 
+    </div> -->
+
+        <div class="starter" id="starterItem" onload="starterItem()">
+          <div id="b0">starter movie</div>
+          <button onclick="starterItem()">NEW MOVIE</button>
+        </div>
 </div>
 </div>
 
