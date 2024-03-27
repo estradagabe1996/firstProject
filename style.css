@@ -35,6 +35,7 @@
     background-color: black;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    margin-top: 165px;
     
     
 }
