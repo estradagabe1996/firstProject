@@ -141,6 +141,13 @@ function startPage() {
 
     $("#howtoplaypopup").hide();
 
+    //used jQuery to animate the game logo as an easter egg (Happy Easter!)
+    $("#easterButton").click(function(){
+        $(".startPageLogo").animate({height: '800px', opacity: '0.4'}, "slow");
+        $(".startPageLogo").animate({width: '800px', opacity: '0.8'}, "slow");
+        $(".startPageLogo").animate({height: '400px', opacity: '0.4'}, "slow");
+        $(".startPageLogo").animate({width: '400px', opacity: '0.8'}, "slow");
+    });
     
 }
 

@@ -10,7 +10,7 @@ The technologies we used were HTML, CSS, Javascript, jQuery, Bootstrap, and a Mo
 
 # Screenshots of the Game
 Here is the start screen:
-![Random Ranking start screen]()
+![Random Ranking start screen](./Markdown%20photos/randomRanking-start-page.png)
 
 Here is the game window:
 ![Random Ranking game screen]()
