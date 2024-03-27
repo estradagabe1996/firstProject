@@ -62,4 +62,4 @@ function startGame() {
 
 
 
-// Ashley - close pop up
+
