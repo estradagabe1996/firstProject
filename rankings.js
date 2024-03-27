@@ -1,6 +1,7 @@
 // Movie API
 // Random movie list from 2023 under 'Adventure' category
 // Has poster images, movie titles (would need to parse through)
+let randomItem = [];
 
 fetch('https://moviesdatabase.p.rapidapi.com/titles?year=2023&titleType=movie&genre=Adventure', {
     headers: {
@@ -8,10 +9,89 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?year=2023&titleType=movie&ge
         'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com',
     },
 })
+
+
+
 .then((response) => response.json())
 .then((response) => {
-    console.log(response.results[0])
+    for(let j = 0; j < 5; j++) {
+        let randomIndex = Math.ceil(Math.random() * 7);
+                console.log(randomIndex);
+                console.log("Movie Title: " + response.results[randomIndex].titleText.text);
+            randomItem.push(response.results[randomIndex].primaryImage);
+            // randomItem.push(response.results[randomIndex].primaryImage);
+                console.log("Random Item Test: " + randomItem[j].url);
+    }
 });
+
+function starterItem() {
+    
+    let detailedContainer = document.getElementById("b0");
+    let pledgeImage = document.createElement("img");
+
+    pledgeImage.src = randomItem[0].url;
+    pledgeImage.setAttribute('class', 'testImg');
+
+    detailedContainer.appendChild(pledgeImage);
+    
+}
+starterItem();
+
+
+function first() {
+    let detailedContainer = document.getElementById("b1");
+    let pledgeImage = document.createElement("img");
+
+    pledgeImage.src = randomItem[0].url;
+    pledgeImage.setAttribute('class', 'testImg');
+
+    detailedContainer.appendChild(pledgeImage);
+    randomItem.splice(0 , 1);
+    // document.getElementById("btn btn-primary").disabled = true;  
+}
+function second() {
+    let detailedContainer = document.getElementById("b2");
+    let pledgeImage = document.createElement("img");
+
+    pledgeImage.src = randomItem[0].url;
+    pledgeImage.setAttribute('class', 'testImg');
+
+    detailedContainer.appendChild(pledgeImage);
+    randomItem.splice(0 , 1);
+    
+}
+function third() {
+    let detailedContainer = document.getElementById("b3");
+    let pledgeImage = document.createElement("img");
+
+    pledgeImage.src = randomItem[0].url;
+    pledgeImage.setAttribute('class', 'testImg');
+
+    detailedContainer.appendChild(pledgeImage);
+    randomItem.splice(0 , 1);
+}
+function fourth() {
+    let detailedContainer = document.getElementById("b4");
+    let pledgeImage = document.createElement("img");
+
+    pledgeImage.src = randomItem[0].url;
+    pledgeImage.setAttribute('class', 'testImg');
+
+    detailedContainer.appendChild(pledgeImage);
+    randomItem.splice(0 , 1);
+}
+function fifth() {
+    let detailedContainer = document.getElementById("b5");
+    let pledgeImage = document.createElement("img");
+
+    pledgeImage.src = randomItem[0].url;
+    pledgeImage.setAttribute('class', 'testImg');
+
+    detailedContainer.appendChild(pledgeImage);
+    randomItem.splice(0 , 1);
+}
+
+
 
 // Start Page
 
@@ -49,12 +129,14 @@ function startPage() {
 
 }
 
+// let randomItem = [];
+
 function startGame() {
     let startMenu = document.getElementById('startPageDiv');
     startMenu.style.display = "none";
 }
 
-
+// console.log("Random Item Test: " + randomItem[0].titleText.text, randomItem[0].primaryImage.url)
 
 
 // Gabe Code

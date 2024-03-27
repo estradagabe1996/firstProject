@@ -44,13 +44,28 @@
     border-color: black !important;
     background-color: black !important;
 }
-
 .card {
     border-color: black !important;
 }
+.card1 {
+    grid-area: 1 / 2 / 1 / 2 ;
+}
+.card2 {
+    grid-area: 2 / 2 / 2 / 2 ;
+}
+.card3 {
+    grid-area: 3 / 2 / 3 / 2 ;
+}
+.card4 {
+    grid-area: 4 / 2 / 4 / 2 ;
+}
+.card5 {
+    grid-area: 5 / 2 / 5 / 2 ;
+}
 
-.randomCard {
-    grid-area: 3 / 4 / 3 / 4;
+.starter {
+    color: white;
+    grid-area: 1 / 4 / 5 / 4;;
 }
 
 .card-body {
@@ -131,3 +146,9 @@
     /* display: flex;
     justify-content: center; */
 }
+
+.testImg {
+    width: 150px;
+    height: 1fr;
+}
+
