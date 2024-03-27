@@ -63,7 +63,3 @@ function startGame() {
 
 
 // Ashley - close pop up
-function closePop(){
-    let button = document.getElementById ("howtoplaypopup")
-    howtoplaypopup.style.display = "none";
-}
