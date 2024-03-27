@@ -48,6 +48,7 @@ function startGameButton(category, id) {
     let currentImage = document.createElement ("div");
 
     let pledgeImage = document.createElement("img");
+    // let testHideDiv = document.createElement('div')
 
     pledgeImage.src = category[0].url;
     pledgeImage.setAttribute('class', 'starterImg');
@@ -130,6 +131,7 @@ function placeItem(category, id) {
 // Function to 
 function startPage() {
     // This part of the function gets and prints out the current date
+
     let startDate = document.getElementById('startDate');
     let currentDate = new Date();
     startDate.innerText = currentDate.toDateString();
@@ -137,47 +139,23 @@ function startPage() {
     // used jQuery to hide the game screen
     $("#gameScreen").hide();
 
-    // // This part of the function prints the Creators' informations
-    // let groupInfo = document.getElementById('groupInfo');
-    // let groupGitHubInfo = document.getElementById('groupGitHubInfo');
-    // let groupMembers = ["Gabriel", "Ashley", "Jessie"];
-    // let githubLinks = ["https://github.com/estradagabe1996", "https://github.com/moneymornings", "https://github.com/Hoang-J"]
-    // for(i = 0; i < groupMembers.length; i++) {
-    //     let eachMember = document.createElement('div');
-    //     eachMember.setAttribute('class', 'groupMembers');
-    //     eachMember.innerText = groupMembers[i];
-    //     let memberGithubLinks = document.createElement('div');
-    //     memberGithubLinks.setAttribute('class', 'groupMembers');
-    //     memberGithubLinks.innerText = githubLinks[i];
-    //     groupInfo.appendChild(eachMember);
-    //     groupGitHubInfo.appendChild(memberGithubLinks);
-    // }
-    // // let creator1 = document.createElement('p');
-    // // let creator2 = document.createElement('p');
-    // // let creator3 = document.createElement('p');
+    $("#howtoplaypopup").hide();
 
-    // // creator1.innerText = "Gabriel";
-    // // creator2.innerText = "Ashley";
-    // // creator3.innerText = "Jessie";
-
-    // // groupInfo.appendChild(creator1);
-
+    
 }
 
 // let randomItem = [];
 
 function startGame() {
 
-    // Codes using jQuery to hide the "start page" and to show the "game screen"
+    // Codes using jQuery to hide the "start page" and to show the "how to play instructions"
     $("#startPageDiv").hide();
 
     // let startMenu = document.getElementById('startPageDiv');
     // startMenu.style.display = "none";
 
-    $("#gameScreen").show();
-
-    // let gameScreen = document.getElementById('gameScreen')
-    // gameScreen.style.display = "block";
+    // used jQuery to show the how to play instructions
+    $("#howtoplaypopup").show();
 
 }
 
@@ -189,4 +167,7 @@ function startGame() {
 function closePop(){
     let button = document.getElementById ("howtoplaypopup")
     howtoplaypopup.style.display = "none";
+
+    // used jQuery to show the game screen
+    $("#gameScreen").show();
 }
