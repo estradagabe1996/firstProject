@@ -1,24 +1,32 @@
 /* Navbar */
 
 .navbar-brand {
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-    position:relative;
-    left: 50%;
-    /* margin-left: -50px !important; */
+    position: absolute !important;
+    left: 660px;
+    top: 20px !important;
+    bottom: 1px !important;
     text-align: center !important;
-    display: block;
+    
+   
     
 }
 
+/* Navbar links font style */
 .nav-link-active {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Make the button on the right side of the navbar so that you can get to the different categories */
 .navbar-toggler { 
     position: absolute !important;
     right: 50px !important;
 }
 
+
+/* Styling the meet the team buttons */
 button.Migos {
     border: 5px solid red !important;
     width: 140px;
@@ -32,6 +40,10 @@ button.Migos {
     margin-top: 10px;
 }
 
+/* Make the hyperlink white */
+.Migos > a {
+    color: white;
+}
 
 /* Game Cards, where the game is at */
 
@@ -41,41 +53,26 @@ button.Migos {
     background-color: black;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    margin-top: 150px;
+    margin-top: 50px;
     
     
 }
 
+/* Where the posters are located */
 .cards {
     border-color: black !important;
     background-color: black !important;
+    grid-column: 2 / 2 ;
 }
+
 .card {
     border-color: black !important;
-}
-.card1 {
-    grid-area: 1 / 1 / 1 / 1 ;
-    width: 1fr;
-    height: 1fr;
-}
-.card2 {
-    grid-area: 1 / 2 / 1 / 2 ;
-    width: 1fr;
-    height: 1fr;
-}
-.card3 {
-    grid-area: 3 / 2 / 3 / 2 ;
-}
-.card4 {
-    grid-area: 4 / 2 / 4 / 2 ;
-}
-.card5 {
-    grid-area: 5 / 2 / 5 / 2 ;
 }
 
 .starter {
     color: white;
     grid-area: 1 / 4 / 5 / 4;;
+    margin-top: 70px;
 }
 
 .card-body {
@@ -93,6 +90,7 @@ button.Migos {
     color: white;
 }
 
+/* Button to click to assign movies/shows to rankkings */
 .btn-primary {
     background-color: #787c7f !important;
     border-color: #787c7f !important;
@@ -103,13 +101,13 @@ button.Migos {
 #startPageDiv {
     display: flex;
     flex-direction: column;
-    border: 2px dashed rgb(220, 47, 47);
     width: 100%;
     height: 800px;
     margin-top: 100px;
     background-color: black;
 }
 
+/* Start page main picture */
 .startPageLogo { 
     align-self: center;
     margin-top: 10px;
@@ -117,12 +115,14 @@ button.Migos {
     height: 400px;
 }
 
+/* This was to push the whole div down so that it doesn't get covered by the navbar */
 #startPageDiv > p {
     text-align: center;
     font-size: 20px;
     margin-top: 0px;
 }
 
+/* The styling of the start game button */
 #startGameButton {
     width: 100px;
     height: 35px;
@@ -135,21 +135,6 @@ button.Migos {
     color: white;
     background-color:black;
 }
-
-#easterButton {
-    width: 110px;
-    height: 35px;
-    font-size: 13px;
-    align-self: center;
-    border-radius: 20px;
-    border: 5px solid red;
-    border-radius: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    background-color:black;
-    margin-top: 10px;
-}
-
 
 /* pop up */
 #fullcontainer{
@@ -180,13 +165,18 @@ body{
 
 }
 
+/* The entire navbar */
+.container-fluid{
+    height: 30px !important;
+    
+}
 
+/* The text for the how to play instructions */
 .popup-content{
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-weight: bolder;
 
 }
-
 
 .closepop{
     position: absolute;
@@ -194,12 +184,15 @@ body{
     height: 25px; 
 }
 
+/* The sizing of the image that shows up once the player clicks and assigns it to a specific ranking */
 .testImg {
-    width: 150px;
-    height: 1fr;
+    width: 75px;
+    height: 110px;
 }
+
+/* The sizing of the image that shows up on the right side for players to know which movie is to be ranked */
 .starterImg {
-    width: 300px;
-    height: 2fr;
+    width: 400px;
+    height: 3fr;
 }
 
