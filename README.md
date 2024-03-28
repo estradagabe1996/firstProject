@@ -9,11 +9,13 @@ Our project is a game where you are given random movie posters to blindly rank e
 The technologies we used were HTML, CSS, Javascript, jQuery, Bootstrap, and a Movie Database API.
 
 # Screenshots of the Game
-Here is the start screen:
+### Here is the start screen:
 ![Random Ranking start screen](./Markdown%20photos/randomRanking-start-page.png)
 
-Here is the game window:
-![Random Ranking game screen]()
+### Users can choose between two categories (Movies or TV Shows)
+### Here are the game windows:
+![Random Ranking game screen with Movie category](./Markdown%20photos/movie-game-page.png)
+![Random Ranking game screen with TV Show category](./Markdown%20photos/tvShows-game-page.png)
 
 # Team Members
 * __Gabriel Estrada__

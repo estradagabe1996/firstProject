@@ -14,6 +14,7 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType
     }
 
 })
+
 .then((response) => response.json())
 .then((response) => {
     for(let j = 0; j < 5; j++) {
@@ -28,7 +29,7 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType
 
     //API 2/
 
-    fetch('https://movies-api14.p.rapidapi.com/shows',{
+fetch('https://movies-api14.p.rapidapi.com/shows', {
     headers: {
         'X-RapidAPI-Key': '4833fa5f73mshf20639fcc428dc0p19bf44jsn63635ad62d44',
         'X-RapidAPI-Host': 'movies-api14.p.rapidapi.com'
@@ -51,15 +52,10 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType
 
 
 
-
-
-
-
-
 // Start Game Function
-function startGameButton(category, id) {
-    let detailedContainer = document.getElementById(id);
-    document.getElementById(id).innerHTML = "";
+function startGameButton(category, starterID) {
+    let detailedContainer = document.getElementById(starterID);
+    document.getElementById(starterID).innerHTML = " ";
     let currentImage = document.createElement ("div");
 
     let pledgeImage = document.createElement("img");
@@ -70,12 +66,14 @@ function startGameButton(category, id) {
 
 
     currentImage.appendChild(pledgeImage);
-    detailedContainer.appendChild(currentImage);   
+    detailedContainer.appendChild(currentImage); 
+
+
 }
 
 
 // fucntions for the buttons to add poster to said button
-function placeItem(category, id) {
+function placeItem(category, id, starterID) {
     let detailedContainerDiv = document.getElementById(id);
     let pledgeImage = document.createElement("img");
 
@@ -83,10 +81,21 @@ function placeItem(category, id) {
     pledgeImage.setAttribute('class', 'testImg');
 
     detailedContainerDiv.appendChild(pledgeImage);
+    // document.getElementById('buttonID1').disabled = true;
 
-    category.splice(0 , 1);
+    category.splice(0, 1);
+    
+    if(family.length == []) {
+        $("#starterItem").hide();
+    }
+
+    if(shows.length == []) {
+        $("#starterItem1").hide();
+    }
+
     // document.getElementById("btn btn-primary").disabled = true;  
-    startGameButton(category, `b0`);
+    startGameButton(category, starterID);
+
 }
 
 // Hard Coded version of the place item functions
@@ -154,6 +163,7 @@ function startPage() {
 
     // used jQuery to hide the game screen
     $("#gameScreen").hide();
+    $("#gameScreen2").hide();
 
     $("#howtoplaypopup").hide();
 
@@ -182,6 +192,15 @@ function startGame() {
 
 }
 
+function testTV() {
+    $("#gameScreen").hide();
+    $("#gameScreen2").show();
+}
+
+function testMovie() {
+    $("#gameScreen").show();
+    $("#gameScreen2").hide();
+}
 
 // Gabe Code
 
@@ -193,4 +212,5 @@ function closePop(){
 
     // used jQuery to show the game screen
     $("#gameScreen").show();
+    $("#gameScreen2").hide();
 }

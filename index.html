@@ -39,8 +39,8 @@
                 Pick Your Favorite Category
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Movies</a></li>
-                <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                <li><a onclick="testMovie()" class="dropdown-item" href="#">Movies</a></li>
+                <li><a onclick="testTV()" class="dropdown-item" href="#">TV Shows</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -85,38 +85,83 @@
         <div class="card1" style="height: 1fr;" id="card1">
             <div class="card-body">
             <div id="b1"></div>
-            <a href="#" onclick="placeItem(family, `b1`)" class="btn btn-primary">1</a>
+            <a href="#" onclick="placeItem(family, `b1`, `b0`)" class="btn btn-primary">1</a>
             </div>
         </div>
         <div class="card2" style="height: 1fr;" id="card2">
             <div class="card-body">
               <div id="b2"></div>
-              <a href="#" onclick="placeItem(family, `b2`)" class="btn btn-primary">2</a>
+              <a href="#" onclick="placeItem(family, `b2`, `b0`)" class="btn btn-primary">2</a>
             </div>
         </div>
         <div class="card3" style="height: 1fr;" id="card3">
             <div class="card-body">
               <div id="b3"></div>
-              <a href="#" onclick="placeItem(family, `b3`)" class="btn btn-primary">3</a>
+              <a href="#" onclick="placeItem(family, `b3`, `b0`)" class="btn btn-primary">3</a>
             </div>
         </div>
         <div class="card4" style="height: 1fr;" id="card4">
             <div class="card-body">
               <div id="b4"></div>
-              <a href="#" onclick="placeItem(family, `b4`)" class="btn btn-primary">4</a>
+              <a href="#" onclick="placeItem(family, `b4`, `b0`)" class="btn btn-primary">4</a>
             </div>
         </div>
         <div class="card5" style="height: 1fr;" id="card5">
             <div class="card-body">
               <div id="b5"></div>
-              <a href="#" onclick="placeItem(family, `b5`)" class="btn btn-primary">5</a>
+              <a href="#" onclick="placeItem(family, `b5`, `b0`)" class="btn btn-primary">5</a>
             </div>
     </div>
   </div>     
 <!-- Start game button for Adventure Category -->
         <div class="starter" id="starterItem">
           <div id="b0">starter movie</div>
-          <button onclick="startGameButton(family, `b0`)">NEW MOVIE</button>
+          <button onclick="startGameButton(family, 'b0')">NEW MOVIE</button>
+        </div>
+</div>
+</div>
+
+<!-- TV Shows -->
+
+<div id="gameScreen2">
+  <div class="fullBody">
+    <div class="cards">
+    <!-- Ranking buttons -->
+        <div class="card1" style="height: 1fr;" id="card1">
+            <div class="card-body">
+            <div id="a1"></div>
+            <a href="#" onclick="placeItem(shows, `a1`, `a0`)" class="btn btn-primary">1</a>
+            </div>
+        </div>
+        <div class="card2" style="height: 1fr;" id="card2">
+            <div class="card-body">
+              <div id="a2"></div>
+              <a href="#" onclick="placeItem(shows, `a2`, `a0`)" class="btn btn-primary">2</a>
+            </div>
+        </div>
+        <div class="card3" style="height: 1fr;" id="card3">
+            <div class="card-body">
+              <div id="a3"></div>
+              <a href="#" onclick="placeItem(shows, `a3`, `a0`)" class="btn btn-primary">3</a>
+            </div>
+        </div>
+        <div class="card4" style="height: 1fr;" id="card4">
+            <div class="card-body">
+              <div id="a4"></div>
+              <a href="#" onclick="placeItem(shows, `a4`, `a0`)" class="btn btn-primary">4</a>
+            </div>
+        </div>
+        <div class="card5" style="height: 1fr;" id="card5">
+            <div class="card-body">
+              <div id="a5"></div>
+              <a href="#" onclick="placeItem(shows, `a5`, `a0`)" class="btn btn-primary">5</a>
+            </div>
+    </div>
+  </div>     
+<!-- Start game button for Adventure Category -->
+        <div class="starter" id="starterItem1">
+          <div id="a0">starter TV Show</div>
+          <button onclick="startGameButton(shows, `a0`)">New TV Show</button>
         </div>
 </div>
 </div>

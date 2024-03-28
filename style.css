@@ -52,6 +52,7 @@ button.Migos {
 .cards {
     border-color: black !important;
     background-color: black !important;
+    padding-top: 80px;
 }
 .card {
     border-color: black !important;
@@ -79,6 +80,7 @@ button.Migos {
 .starter {
     color: white;
     grid-area: 1 / 4 / 5 / 4;;
+    margin-top: 80px;
 }
 
 .card-body {
