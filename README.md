@@ -4,7 +4,7 @@
 <!-- list of team members and headshots and links -->
 
 # Random Ranking Game
-Our project is a game where you are given random movie posters to blindly rank each one from 1 to 5.
+Our project is a game where you are given five (5) random movie/TV show posters to blindly rank each one from 1 to 5.
 
 The technologies we used were HTML, CSS, Javascript, jQuery, Bootstrap, and a Movie Database API.
 

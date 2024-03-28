@@ -52,30 +52,14 @@ button.Migos {
 .cards {
     border-color: black !important;
     background-color: black !important;
-    padding-top: 80px;
+    padding-top: 30px;
+    grid-column: 2 / 2 ;
 }
 .card {
     border-color: black !important;
 }
-.card1 {
-    grid-area: 1 / 1 / 1 / 1 ;
-    width: 1fr;
-    height: 1fr;
-}
-.card2 {
-    grid-area: 1 / 2 / 1 / 2 ;
-    width: 1fr;
-    height: 1fr;
-}
-.card3 {
-    grid-area: 3 / 2 / 3 / 2 ;
-}
-.card4 {
-    grid-area: 4 / 2 / 4 / 2 ;
-}
-.card5 {
-    grid-area: 5 / 2 / 5 / 2 ;
-}
+
+
 
 .starter {
     color: white;
@@ -140,21 +124,6 @@ button.Migos {
     background-color:black;
 }
 
-#easterButton {
-    width: 110px;
-    height: 35px;
-    font-size: 13px;
-    align-self: center;
-    border-radius: 20px;
-    border: 5px solid red;
-    border-radius: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    background-color:black;
-    margin-top: 10px;
-}
-
-
 /* pop up */
 
 .popupbox{
@@ -184,8 +153,8 @@ button.Migos {
 }
 
 .testImg {
-    width: 150px;
-    height: 1fr;
+    width: 75px;
+    height: 150fr
 }
 .starterImg {
     width: 300px;
