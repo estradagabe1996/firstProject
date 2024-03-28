@@ -207,13 +207,26 @@ function startGame() {
 }
 
 function testTV() {
+
+    // jQuery to make tv show game screen showing when player chooses the tv show category
     $("#gameScreen").hide();
     $("#gameScreen2").show();
+
+    // jQuery to make new tv show button show but hide the movie button when on the tv show category
+    $("#hideGameButton").hide();
+    $("#hideGameButton1").show();
+    
 }
 
 function testMovie() {
+
+    // jQuery to make movie game screen showing when player chooses the movie category
     $("#gameScreen").show();
     $("#gameScreen2").hide();
+
+    // jQuery to make new movie button show but hide the show button when on the movie category
+    $("#hideGameButton1").hide();
+    $("#hideGameButton").show();
 }
 
 
