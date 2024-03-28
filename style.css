@@ -120,6 +120,7 @@ button.Migos {
     text-align: center;
     font-size: 20px;
     margin-top: 0px;
+    color: white;
 }
 
 /* The styling of the start game button */
@@ -134,6 +135,11 @@ button.Migos {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     background-color:black;
+}
+
+/* Start Date text color */
+#startDate {
+    color: white;
 }
 
 /* pop up */
