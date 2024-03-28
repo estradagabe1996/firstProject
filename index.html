@@ -12,14 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 </head>
+
 <body onload="startPage()">
 
 <!-- Navbar -->
-
 <nav class="navbar navbar-dark bg-dark fixed-top">
     <span class="migosmigos"></span>
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./Navbar photos/Random Ranking 2.1.png" width="125" height="125"> 
+        <a class="navbar-brand" href="#"><img src="Navbar photos/Random Ranking textlogo.png" width="125" height="125"> 
         </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,6 @@
     </div>
     <h4 id="howToTitle"> How to Play! </h4> <br> <h5>1. Click New Movie to Start Game  & A Random Movie Poster will appear. <br> 2. Now click your preferred ranking position button from 1-5. <br> 3.Continue to click your preferred ranking position button for until all 5 Movies are Ranked!<br> 4. Be Careful! You don't know what movie poster will pop up next!  Click X to start the game <br> <br> 
         <img src="./Navbar photos/click.1.png" width="145" height="130"> <img src="./Navbar photos/click.2.png" width="145" height="130"></h5>  
-
  </div>
 </div>
 
@@ -116,16 +115,16 @@
             </div>
     </div>
   </div>     
-<!-- Start game button for Adventure Category -->
+<!-- Start game button for Adventure Movies Category -->
         <div class="starter" id="starterItem">
           <div id="b0"></div>
-          <button onclick="startGameButton(family, 'b0')">NEW MOVIE</button>
+          <button id="hideGameButton" onclick="startGameButton(family, 'b0')">NEW MOVIE</button>
         </div>
 </div>
 </div>
 
 <!-- TV Shows -->
-
+<!-- Ranking Game Codes -->
 <div id="gameScreen2">
   <div class="fullBody">
     <div class="cards">
@@ -161,10 +160,10 @@
             </div>
     </div>
   </div>     
-<!-- Start game button for Adventure Category -->
+<!-- Start game button for TV Shows Category -->
         <div class="starter" id="starterItem1">
           <div id="a0"></div>
-          <button onclick="startGameButton(shows, `a0`)">New TV Show</button>
+          <button id="hideGameButton1" onclick="startGameButton(shows, `a0`)">New TV Show</button>
         </div>
 </div>
 </div>

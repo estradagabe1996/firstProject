@@ -2,7 +2,7 @@
 // Random movie list from 2023 under 'Adventure' category
 // Has poster images, movie titles (would need to parse through)
 
-// Arrays
+// Arrays to make the objects inside become global to access throughout file
 let family = [];
 let shows = [];
 
@@ -27,8 +27,11 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles?limit=50&year=2023&titleType
     }
 })
 
-    //API 2/
+// API 2
+// TV Shows
+// Popular TV show list// Has poster images
 
+// API Calls
 fetch('https://movies-api14.p.rapidapi.com/shows', {
     headers: {
         'X-RapidAPI-Key': 'af40636de9msh6a580fcf8c8fa3ap158386jsnf7fe347d428c',
@@ -54,7 +57,14 @@ fetch('https://movies-api14.p.rapidapi.com/shows', {
 
 // Start Game Function
 function startGameButton(category, starterID) {
+
+    // used jQuery to hide the new movie/tv show button after initial click
+    $("#hideGameButton").hide();
+    $("#hideGameButton1").hide();
+
     let detailedContainer = document.getElementById(starterID);
+
+    // Inorder to remove the first random item, we need to clear the div
     document.getElementById(starterID).innerHTML = " ";
     let currentImage = document.createElement ("div");
 
@@ -72,19 +82,24 @@ function startGameButton(category, starterID) {
 }
 
 
-// fucntions for the buttons to add poster to said button
+// Function for the buttons to add poster to said button
 function placeItem(category, id, starterID) {
     let detailedContainerDiv = document.getElementById(id);
     let pledgeImage = document.createElement("img");
 
     pledgeImage.src = category[0];
     pledgeImage.setAttribute('class', 'testImg');
-
     detailedContainerDiv.appendChild(pledgeImage);
+
+    // Couldn't disable buttons because the "a" tags from bootstraps and not "buttons"
     // document.getElementById('buttonID1').disabled = true;
 
+
+    // Remove the first item in array to show next random item
     category.splice(0, 1);
     
+    // Once array is empty, hide the div so image error doesn't appear 
+    // Use jQuery for these codes below
     if(family.length == []) {
         $("#starterItem").hide();
     }
@@ -93,7 +108,7 @@ function placeItem(category, id, starterID) {
         $("#starterItem1").hide();
     }
 
-    // document.getElementById("btn btn-primary").disabled = true;  
+    // Call the startGameButton to get the next random item
     startGameButton(category, starterID);
 
 }
@@ -149,8 +164,7 @@ function placeItem(category, id, starterID) {
 
 
 // Start Page
-
-// Function to 
+// Function to make the Start page appear first and get the date
 
 function startPage() {
 
@@ -167,7 +181,7 @@ function startPage() {
 
     $("#howtoplaypopup").hide();
 
-    //used jQuery to animate the game logo as an easter egg (Happy Easter!)
+    //used jQuery to animate the game logo as an easter egg (Happy Easter! 🥚🐰🐣)
     $("#easterButton").click(function(){
         $(".startPageLogo").animate({height: '800px', opacity: '0.4'}, "slow");
         $(".startPageLogo").animate({width: '800px', opacity: '0.8'}, "slow");
@@ -177,13 +191,13 @@ function startPage() {
     
 }
 
-// let family = [];
 
 function startGame() {
 
     // Codes using jQuery to hide the "start page" and to show the "how to play instructions"
     $("#startPageDiv").hide();
 
+    // Hard coded these to hide the start page, and decided to use jQuery instead for requirement but also, jQuery coded it in one line less.
     // let startMenu = document.getElementById('startPageDiv');
     // startMenu.style.display = "none";
 
@@ -202,10 +216,9 @@ function testMovie() {
     $("#gameScreen2").hide();
 }
 
-// Gabe Code
-
 
 // Ashley - pop-up//
+//This function was created to close the How To Play Pop Up//
 function closePop(){
     let button = document.getElementById ("howtoplaypopup")
     howtoplaypopup.style.display = "none";
