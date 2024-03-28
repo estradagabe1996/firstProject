@@ -164,6 +164,10 @@ body{
     background-color: black !important;
 }
 
+#howToTitle{
+    text-align: center;
+}
+
 .popupbox{
     background-color:firebrick; 
     border: 5px solid goldenrod;
